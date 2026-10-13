@@ -6,6 +6,7 @@ const dir = mkdtempSync(join(tmpdir(), "mt-"));
 const c = new Client({ name: "smoke", version: "1" });
 await c.connect(new StdioClientTransport({ command: "node", args: ["dist/server.js"], env: { ...process.env, MANIFEST_TODO_DATA: join(dir, "d.json") } }));
 let fails = 0;
+fails++; console.log("❌ 測試用：故意製造失敗，驗證 branch protection 是否擋得住");
 const call = async (name, args, expectErr = false) => {
   const r = await c.callTool({ name, arguments: args });
   const txt = r.content[0].text;
