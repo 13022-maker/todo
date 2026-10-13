@@ -1,5 +1,7 @@
 # Manifest Todo MCP
 
+[![Test](https://github.com/13022-maker/todo/actions/workflows/test.yml/badge.svg)](https://github.com/13022-maker/todo/actions/workflows/test.yml)
+
 顯化思維 × 目標導向 × 輕重緩急 的待辦 AI 助理。MCP server，可接 Claude Desktop、Claude Code 或任何支援 MCP 的客戶端。
 
 ```
